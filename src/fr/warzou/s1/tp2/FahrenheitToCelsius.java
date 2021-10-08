@@ -3,7 +3,7 @@ package fr.warzou.s1.tp2;
 public class FahrenheitToCelsius {
 
     public static void main(String[] args) {
-        for (int i = 250; i > -21; i--)
+        for (int i = 250; i > -21; i -= 10)
             System.out.println("celsius : '" + i + "' / fahrenheit : '" + toCelsius(i) + "'");
     }
 
