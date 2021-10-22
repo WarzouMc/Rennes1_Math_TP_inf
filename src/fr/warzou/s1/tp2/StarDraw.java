@@ -66,7 +66,6 @@ public class StarDraw {
                 builder.append("* ").append("  ".repeat(height - 2)).append("* ").append('\n');
                 continue;
             }
-
             builder.append("* ").append("  ".repeat(i - 1)).append("* ").append("  ".repeat(height - i - 2)).append("* \n");
         }
         System.out.println(builder.substring(0, builder.length() - 2));
