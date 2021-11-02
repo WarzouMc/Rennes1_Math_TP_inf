@@ -16,21 +16,21 @@ public class Occurrence {
         System.out.println(Arrays.toString(array));
     }
 
-    private static int first(int[] array, int target) {
+    public static int first(int[] array, int target) {
         for (int i = 0; i < array.length; i++)
             if (array[i] == target)
                 return i;
         return -1;
     }
 
-    private static int count(int[] array, int target) {
+    public static int count(int[] array, int target) {
         int count = 0;
         for (int j : array)
             count += j == target ? 1 : 0;
         return count;
     }
 
-    private static void replace(int[] array, int target, int replace) {
+    public static void replace(int[] array, int target, int replace) {
         //with while;
         int index;
         while ((index = first(array, target)) != -1)
